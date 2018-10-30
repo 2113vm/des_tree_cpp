@@ -1,10 +1,20 @@
 #include <iostream>
-#include "DesTree/DesTree.h"
+#include <cstddef>
+#include "BinaryTree/BinaryTree.h"
+#include "BinaryTree/BinaryTree.cpp"
 
+
+using namespace std;
 
 int main() {
 
-    auto *des_tree = new DesTree();
-    
+    auto *tree = new BinaryTree();
+
+    int m;
+
+    cin >> m;
+
+    tree->insert(m);
+
     return 0;
 }
